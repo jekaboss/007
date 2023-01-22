@@ -1,0 +1,279 @@
+/* .box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    display: inline-block;
+    margin: -2px;
+    padding: 9px;
+    font-size: 92px;
+    text-align: center;
+}
+
+.black{
+    background-color: #000;
+    color: #fff;
+}
+
+.can-vas{
+    display: flex;
+    justify-content: space-between;
+} */
+/* ============================== */
+/* body{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background-color: rgb(118, 90, 212);
+}
+.can__vas{
+    padding-top: 150px;
+}
+#canvas{
+    border: 1px solid #000;
+} */
+
+
+/* .flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslategray;
+    height: 500px;
+}
+.flexbox > div{
+    border: 1px solid #000;
+    padding: 10px;
+    background-color: blueviolet;
+}
+.flexbox > div:nth-child(4){
+    align-self: stretch;
+}
+.flexbox > div:nth-child(2){
+    align-self: flex-start;
+} */
+/* =========================================== */
+/* .progress-container{
+    width: 300px;
+    height: 10px;
+    background-color:gray;
+    border-radius: 5px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.progress-content{
+    height: 100%;
+    background-color: chartreuse;
+} */
+/* ======================================= */
+
+
+/* img {
+    transition: all 1s ease-in;
+    transform: perspective(300px) rotate(180deg);
+}
+img:hover{
+    transform: perspective(300px) rotateY(45deg);
+} */
+/* body{
+    background-color:blueviolet;
+}
+.img__img{
+    display: flex;
+    align-items: center;
+}
+.img1{
+    transform: perspective(300px) rotateY(35deg);
+    margin-left: 120px;
+}
+.img2 img{
+    top: 0;
+    position: relative;
+    border-radius: 20px;
+    animation-name: moveForward;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes moveForward{
+    0%{
+        left: 0;
+    }
+    25%{
+        top: 100px;
+    }
+    75%{
+        top: 0;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+.img3{
+    transform: perspective(300px) rotate(180deg) rotateY(35deg);
+} */
+
+/* =================================== */
+
+
+body {
+    background-color: #f2f3f4;
+}
+.container-h1 {
+    font-size: 60px;
+    text-align: center;
+    color: #000;
+    text-shadow: 10px 10px 30px #fc78ff, -10px -10px 30px #fc78ff;
+    -webkit-text-stroke: 1px #000;
+    letter-spacing: 5px;
+
+    animation: text-flicker-in-glow 4s linear both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes text-pop-up-top {
+    0% {
+        transform: translateY(0);
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        transform: translateY(-50px);
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #b325c0, 0 2px 0 #dd13c9, 0 3px 0 #dd22d3, 0 4px 0 #df1ee9, 0 5px 0 #d71de1, 0 6px 0 #d518cb, 0 7px 0 #d118be, 0 8px 0 #b713c6, 0 9px 0 #d315d3, 0 50px 30px rgb(186, 41, 179);
+    }
+}
+@keyframes text-flicker-in-glow {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    10.1% {
+        opacity: 1;
+        text-shadow: none;
+    }
+    10.2% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    20% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    20.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgb(63, 32, 92);
+    }
+    20.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    30% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    30.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgb(234, 25, 202), 0 0 60px rgba(187, 75, 212, 0.705);
+    }
+    30.5% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgb(228, 36, 212), 0 0 60px rgb(229, 19, 232);
+    }
+    30.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    45% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    45.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgb(248, 23, 237), 0 0 60px rgba(211, 15, 246, 0.963);
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgb(235, 23, 250), 0 0 60px rgb(218, 48, 240);
+    }
+    55% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgb(247, 11, 243), 0 0 60px rgb(222, 16, 229);
+    }
+    55.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    57% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    57.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgb(188, 24, 225), 0 0 60px rgb(235, 27, 211);
+    }
+    60% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(222, 10, 234, 0.979), 0 0 60px rgba(211, 21, 221, 0.979);
+    }
+    60.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    65% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    65.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgb(236, 17, 225), 0 0 60px rgb(231, 20, 242), 0 0 100px rgb(240, 18, 229);
+    }
+    75% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgb(246, 14, 204), 0 0 60px rgb(226, 15, 230), 0 0 100px rgba(220, 17, 203, 0.974);
+    }
+    75.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    77% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    77.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgb(216, 18, 199), 0 0 60px rgb(230, 18, 212), 0 0 110px rgb(226, 32, 181), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    85% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgb(214, 14, 221), 0 0 60px rgb(205, 15, 223), 0 0 110px rgb(198, 24, 160), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    85.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    86% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    86.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgb(204, 16, 210), 0 0 60px rgba(233, 13, 229, 0.993), 0 0 110px rgb(227, 26, 213), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgb(254, 17, 218), 0 0 60px rgb(203, 22, 223), 0 0 110px rgb(236, 37, 226), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+}
+
+.container-h1 {
+    letter-spacing: 3px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 60px;
+    color: rgb(40, 40, 40);
+    text-align: center;
+}
